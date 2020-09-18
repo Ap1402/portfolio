@@ -1,0 +1,74 @@
+{
+  "en": {
+    "navbar": {
+      "aboutMe": "About Me",
+      "skills": "My Skills",
+      "myProject": "My Projects",
+      "contact": "Contact"
+    },
+    "skills": {
+      "title": "Skills"
+    },
+    "contactMe": {
+      "title": "Contact me",
+      "github": "My github",
+      "yourName": "Name",
+      "message": "Message",
+      "sendButton":"Submit Message",
+
+      "title2": "If you'd like to contact me, you can do it using the following form"
+    },
+    "aboutMe": {
+      "title": "Habilidades",
+      "description": "I am a developer always seeking to improve my skills and knowledge in order to success in new challenges. Most of my skills are self taught, so I see myself as a good self learner. "
+    }
+  },
+
+  "es": {
+    "navbar": {
+      "aboutMe": "Acerca de mi",
+      "skills": "Mis habilidades",
+      "myProject": "Mis proyectos",
+      "contact": "Contáctame"
+    },
+    "skills": {
+      "title": "Habilidades"
+    },
+    "contactMe": {
+      "title": "Contáctame",
+      "github": "Mi github",
+      "yourName": "Nombre",
+      "message": "Mensaje",
+      "sendButton":"Enviar",
+
+      "title2": "Si deseas contactarme, puedes hacerlo por el siguiente formulario"
+    },
+    "aboutMe": {
+      "description": "Me he enfocado principalmente en el desarrollo web, sobre todo en el area del backend, principalmente con Javascript, además también manejo el campo de frontend sin problema alguno."
+    }
+  },
+
+  "jp": {
+    "navbar": {
+      "aboutMe": "私について",
+      "skills": "能力",
+      "myProject": "プロジェクト",
+      "contact": "連絡"
+    },
+    "skills": {
+      "title": "能力",
+      "description": "ほとんどバックエンドに手中しようとしますが、フロントエンドのフレームワークにも経験があります"
+    },
+    "contactMe": {
+      "title": "連絡",
+      "github": "私の github",
+      "yourName": "お名前",
+      "message": "メセージ",
+      "title2": "私の仕事に興味がありましたら、気兼ねなくご連額をください！",
+      "sendButton":"送信する"
+    },
+    "aboutMe": {
+      "description": "Me he enfocado principalmente en el desarrollo web, sobre todo en el area del backend, principalmente con Javascript, además también manejo el campo de frontend sin problema alguno."
+    }
+  }
+}
