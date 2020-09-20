@@ -27,7 +27,7 @@ const SkillIconStyle = styled.div`
 const SkillsIcons = ({ skillSet, platform }) => {
 
   const getIconSrc = (skillSet, platform) =>{
-    const iconSrc = '/icons/'+skillSet+'/' + platform + '.svg'
+    const iconSrc = './icons/'+skillSet.toLowerCase()+'/' + platform.toLowerCase() + '.svg'
     return iconSrc
    }
 
