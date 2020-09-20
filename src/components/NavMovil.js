@@ -75,7 +75,7 @@ const OpenButton = styled.button`
   }
 `;
 
-const NavMovil =({translations})=>{
+const NavMovil =({translations, children})=>{
 
 const [isOpen, setIsOpen] = useState(false);
 const handleCloseButton = () => {
@@ -116,6 +116,10 @@ const handleCloseButton = () => {
             <AnchorLink offset="20px" href="#contact">
               {translations.contact}
             </AnchorLink>
+          </li>
+          <li>
+          {children}
+
           </li>
         </ul>
       </ResponsiveNav>

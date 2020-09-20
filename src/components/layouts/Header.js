@@ -122,7 +122,15 @@ const Header = ({translations, location}) => {
         <Nav translations={translations} fontColor={color.fontColor}/>
 
       </div>
-      <NavMovil  translations={translations} />
+      <NavMovil  translations={translations}>          <select
+            className="custom-select"
+            value={language}
+            onChange={(e) => changeHandler(e)}
+          >
+            <option value="es">Spanish</option>
+            <option value="en">English</option>
+            <option value="jp">Japanese</option>
+          </select> </NavMovil>
     </HeaderStyle>
   );
 };
