@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const ResponsiveNav = styled.div`
   padding: 20px;
@@ -29,28 +29,9 @@ const ResponsiveNav = styled.div`
       display: flex;
       text-decoration: inherit;
       padding: 0.75rem;
-      color: #03a696;
+      color: #784079;
       position: relative;
-      &:after {
-        height: 2px;
-        background: #038c7f;
-        content: "";
-        width: 0;
-        position: absolute;
-        transform: translateX(-50%);
-        transition: width 0.4s;
-        transition-timing-function: cubic-bezier(1, -0.65, 0, 2.31);
-        left: 50%;
-        margin-top: 2rem;
-      }
-      &:focus {
-        outline: none;
-        &:after {
-          width: calc(100% - 10rem);
-        }
-        @media (max-width: 700px) {
-          width: calc(100% - 10px);
-        }
+
       }
     }
   }
@@ -58,7 +39,7 @@ const ResponsiveNav = styled.div`
 
 const CloseButton = styled.button`
   background-color: transparent;
-  color: ${(props) => props.theme.mainColor};
+  color: #695575;
   font-size: 3rem;
   cursor: pointer;
   border: 0;
@@ -66,7 +47,7 @@ const CloseButton = styled.button`
   z-index: 2;
   right: 0;
   &:hover {
-    color: ${(props) => props.theme.secondaryColor};
+    color: gray;
   }
 `;
 
@@ -74,79 +55,72 @@ const OpenButton = styled.button`
   display: none;
   @media screen and (max-width: 700px) {
     display: block;
-    background-color: ${(props) => props.theme.secondaryColor};
-    color: ${(props) => props.theme.mainColor};
+    background-color: transparent;
     font-size: 1.5rem;
     cursor: pointer;
     border: 0;
-    position: absolute;
+    position: fixed;
+
     z-index: 2;
     right: 0;
     &:hover {
-      color: ${(props) => props.theme.secondaryColor};
+      color: gray;
     }
   }
   div {
     width: 35px;
     height: 5px;
-    background-color: ${(props) => props.theme.mainColor};
+    background-color: black;
     margin: 6px 0;
   }
 `;
 
-class NavMovil extends Component {
-  state = {
-    open: false,
-  };
+const NavMovil =({translations})=>{
 
-  handleCloseButton = () => {
-    this.setState({
-      ...this.state,
-      open: !this.state.open,
-    });
-  };
+const [isOpen, setIsOpen] = useState(false);
+const handleCloseButton = () => {
+  setIsOpen(!isOpen);
+};
 
-  render() {
-    return (
-      <>
-        <OpenButton onClick={this.handleCloseButton}>
-          <div></div>
-          <div></div>
-          <div></div>
-        </OpenButton>
-        <ResponsiveNav open={this.state.open}>
-          <CloseButton onClick={this.handleCloseButton} title="close">
-            &times;
-          </CloseButton>
-          <ul>
-            <li>
-              <Link to="#aboutme" href="#contact">
-                About Me
-              </Link>
-            </li>
+  return (
+    <>
+      <OpenButton onClick={()=>handleCloseButton()}>
+        <div></div>
+        <div></div>
+        <div></div>
+      </OpenButton>
+      <ResponsiveNav open={isOpen}>
+        <CloseButton onClick={()=>handleCloseButton()} title="close">
+          &times;
+        </CloseButton>
+        <ul>
+          <li>
+            <AnchorLink offset="20px" href="#aboutme">
+              {translations.aboutMe}
+            </AnchorLink>
+          </li>
 
-            <li>
-              <Link to="#skills" href="#contact">
-                My Skills
-              </Link>
-            </li>
+          <li>
+            <AnchorLink offset="20px" href="#skills">
+              {translations.skills}
+            </AnchorLink>
+          </li>
 
-            <li>
-              <Link to="#projects" href="#contact">
-                My Projects
-              </Link>
-            </li>
+          <li>
+            <AnchorLink offset="20px" href="#projects">
+              {translations.myProject}
+            </AnchorLink>
+          </li>
 
-            <li>
-              <Link to="#contact" href="#contact">
-                Contact Me
-              </Link>
-            </li>
-          </ul>
-        </ResponsiveNav>
-      </>
-    );
-  }
-}
+          <li>
+            <AnchorLink offset="20px" href="#contact">
+              {translations.contact}
+            </AnchorLink>
+          </li>
+        </ul>
+      </ResponsiveNav>
+    </>
+  );
+} 
 
 export default NavMovil;

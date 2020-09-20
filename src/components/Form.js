@@ -5,10 +5,11 @@ import styled from "styled-components";
 const FormStyles = styled.form`
   display: flex;
   flex-direction: column;
-  justify-self: left;
   font-size: 1.5rem;
-  margin-right:10rem;
-  width: 80%;
+  width: 100%;
+  label {
+    font-weight: 500;
+  }
   input,
   textarea {
     border: 2px solid gray;
@@ -54,8 +55,9 @@ const FormStyles = styled.form`
     }
   }
 
-  @media screen and (max-width: 780px) {
-    margin: 0;
+
+  @media screen and (max-width: 850px) {
+    margin: auto;
     width: 80%;
     h1 {
       font-size: 1.5rem;

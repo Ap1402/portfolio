@@ -3,10 +3,6 @@ import Nav from "../Navbar";
 import NavMovil from "../NavMovil";
 import styled from "styled-components";
 import { useSelector, useDispatch } from "react-redux";
-import { withRouter } from "react-router";
-
-// import NProgress from 'nprogress';
-// import Router from 'next/router';
 
 const HeaderStyle = styled.header`
 width: 100%;
@@ -126,7 +122,7 @@ const Header = ({translations, location}) => {
         <Nav translations={translations} fontColor={color.fontColor}/>
 
       </div>
-      <NavMovil />
+      <NavMovil  translations={translations} />
     </HeaderStyle>
   );
 };

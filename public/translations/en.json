@@ -14,13 +14,22 @@
       "github": "My github",
       "yourName": "Name",
       "message": "Message",
-      "sendButton":"Submit Message",
-
-      "title2": "If you'd like to contact me, you can do it using the following form"
+      "sendButton":"Submit Message"
     },
     "aboutMe": {
-      "title": "Habilidades",
+      "title": "Habilities",
       "description": "I am a developer always seeking to improve my skills and knowledge in order to success in new challenges. Most of my skills are self taught, so I see myself as a good self learner. "
+    },
+    "projects":{
+      "titleUrl":"/img/projects-title.png",
+      "projectsList": [
+        {"name": "Anime Database API", "imgURL":"/img/projects/anime-database.png", "description":"A web made with kitsu API for anime searching by categories, airing state and name."
+          ,"codeURL":"https://github.com/Flz14/anime-database", "websiteURL":"https://anime-database-popter9of.vercel.app/"},
+        {"name": "Doctor API", "imgURL":"/img/projects/api.png", "description":"An API that manages appointments for a doctor center, pacients can create users, make appointments and see their history. At the same time, doctors can set up their working schedule and accept or decline appointments."
+        ,"codeURL":"https://github.com/Flz14/management-system", "websiteURL":"none"},
+          {"name": "Simple e-commerce API", "imgURL":"/img/projects/api.png", "description":"This API manages a basic e-commerce, with basic user creation, custom carts and articles creation."
+            ,"codeURL":"https://github.com/Flz14/simple-ecommerceNode", "websiteURL":"none"}
+      ]
     }
   },
 
@@ -39,12 +48,21 @@
       "github": "Mi github",
       "yourName": "Nombre",
       "message": "Mensaje",
-      "sendButton":"Enviar",
-
-      "title2": "Si deseas contactarme, puedes hacerlo por el siguiente formulario"
-    },
+      "sendButton":"Enviar"
+        },
     "aboutMe": {
       "description": "Me he enfocado principalmente en el desarrollo web, sobre todo en el area del backend, principalmente con Javascript, además también manejo el campo de frontend sin problema alguno."
+    },
+    "projects":{
+      "titleUrl":"/img/projects-title.png",
+      "projectsList": [
+        {"name": "Doctor API", "imgURL":"/img/projects/api.png", "description":"Una api creada para la administración de citas médicas, además de matener un historial de las visitas y recetas asignadas a cada paciente"
+        ,"codeURL":"https://github.com/Flz14/anime-database", "websiteURL":"none"},
+        {"name": "Anime Database API", "imgURL":"/img/projects/anime-database.png", "description":"Una web creada para la busqueda de animes, por nombre, categoria y estado de transmisión"
+          ,"codeURL":"https://github.com/Flz14/management-system", "websiteURL":"https://anime-database-popter9of.vercel.app/"},
+          {"name": "Simple e-commerce API", "imgURL":"/img/projects/api.png", "description":"Administración de un e-commerce básico, con posibilidad de crear usuarios, crear carritos personalizados y crear ordenes"
+            ,"codeURL":"https://github.com/Flz14/simple-ecommerceNode", "websiteURL":"none"}
+      ]
     }
   },
 
@@ -56,9 +74,8 @@
       "contact": "連絡"
     },
     "skills": {
-      "title": "能力",
-      "description": "ほとんどバックエンドに手中しようとしますが、フロントエンドのフレームワークにも経験があります"
-    },
+      "title": "能力"
+        },
     "contactMe": {
       "title": "連絡",
       "github": "私の github",
@@ -68,7 +85,19 @@
       "sendButton":"送信する"
     },
     "aboutMe": {
-      "description": "Me he enfocado principalmente en el desarrollo web, sobre todo en el area del backend, principalmente con Javascript, además también manejo el campo de frontend sin problema alguno."
+      "description": "主にJavaScriptを使用します。具体的にバックエンドのスキルに手中してきましたが、フロントエンドの技術も問題なく緒戦します。新しい技術やスキルを身につけるのは私にとってなによりなので、自分をいつも緒戦を探している人と思います。"
+    },
+    "projects":{
+      "titleUrl":"/img/projects-title.png",
+      "projectsList": [
+        {"name": "Doctor API", "imgURL":"/img/projects/api.png", "description":
+          "スケジュールをデジタル管理するAPIです。ユーザーはスケジュールを予定することや、レシピを読むこともできます。あと、医者は自分の仕事スケジュールを指定することや、患者のスケジュールを管理することができます。"
+        ,"codeURL":"https://github.com/Flz14/management-system", "websiteURL":"none"},
+        {"name": "Anime Database API", "imgURL":"/img/projects/anime-database.png", "description":"アニメ探索のために作られたウェッブです。カテゴリやタイトルで探索ことができます。"
+          ,"codeURL":"https://github.com/Flz14/management-system", "websiteURL":"https://anime-database-popter9of.vercel.app/"},
+          {"name": "Simple e-commerce API", "imgURL":"/img/projects/api.png", "description":"簡単なecommerceの管理ソフト。"
+            ,"codeURL":"https://github.com/Flz14/management-system", "websiteURL":"none"}
+      ]
     }
   }
 }

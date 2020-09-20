@@ -14,7 +14,9 @@ const FooterStyles = styled.footer`
     flex-direction: column;
     box-shadow: 0px 0 10px  rgba(0,0,0,0.75);
 
-    p{
+    p{ 
+        display: inline-block;
+        margin-top: 6px;
         margin-bottom:6px;
         @media screen and (max-width: 600px) {
             margin: 1rem 1rem 0 1rem;
@@ -28,6 +30,8 @@ const FooterStyles = styled.footer`
 const Footer = () => (
     <FooterStyles>
         <p>Portfolio designed with React </p>
+        <p>Email: Andres.pintosantiso@gmail.com</p>
+
     </FooterStyles>
 )
 

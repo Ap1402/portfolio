@@ -17,7 +17,7 @@ const NavbarStyle = styled.ul`
     padding: 0.5rem;
     text-decoration: none;
     color: ${props=>props.fontColor};
-    font-weight: 800;
+    font-weight: bold;
 
     margin: 0 10px;
   }

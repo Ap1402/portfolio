@@ -1,4 +1,3 @@
-import { useInView } from "react-intersection-observer";
 import styled from "styled-components";
 import React from "react";
 import Carousel from 'react-elastic-carousel'
@@ -64,12 +63,8 @@ const SkillsStyles = styled.section`
   }
 
 `;
-//const backendIcons = getIcons("backend");
 
 const Skills = ({translations}) => {
-  const [ref, inView] = useInView({
-    threshold: 1,
-  });
 
  const breakPoints = [
   { width: 1, itemsToShow: 1 },

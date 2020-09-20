@@ -8,7 +8,7 @@ display: flex;
 justify-content: center;
   flex-direction: column;
 .title-image{
-  height:10rem;
+  height:13rem;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -34,7 +34,6 @@ justify-content: center;
 
 const ProjectsStyle = styled.div`
   display:grid;
-  flex: 1;
   box-sizing: border-box;
   width:90%;
   padding: 2rem;
@@ -59,19 +58,19 @@ const ProjectsStyle = styled.div`
 
 `;
 
-const Projects = () => {
+const Projects = ({translations}) => {
     return (
       <ProjectsDivStyle id="projects">
-              <h2 id="section3"></h2>
 
-            <img className="title-image" src="/img/projects-title.png"></img>
+            <img className="title-image" src={translations.titleUrl}></img>
         <ProjectsStyle>
-            <Project key="1" title="Doctor api" imgSource="/icons/others/api.png" description="Test description"/>
-            <Project key="2" title="Doctor api" imgSource="/icons/others/api.png" description="Test description"/>
-            <Project  key="3" title="Doctor api" imgSource="/icons/others/api.png" description="Test description"/>
-            <Project  key="4"title="Doctor api" imgSource="/icons/others/api.png" description="Test description"/>
-            
+  
+          {translations.projectsList.map((project, index)=>(
+            <Project key={index} title={project.name} imgSource={project.imgURL} description={project.description} codeURL={project.codeURL}
+            websiteURL={project.websiteURL}/>
 
+          ))}
+            
             
         </ProjectsStyle>
         </ProjectsDivStyle>

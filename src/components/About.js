@@ -1,8 +1,5 @@
-import { useEffect } from "react";
-import { useInView } from "react-intersection-observer";
 import styled from "styled-components";
 import React from "react";
-import { withRouter } from "react-router";
 import Particles from 'react-particles-js';
 
 const AboutStyles = styled.section`
@@ -71,9 +68,7 @@ const AboutStyles = styled.section`
 `;
 
 const AboutMe = ({translations}) => {
-  const [ref, inView] = useInView({
-    threshold: 1,
-  });
+
   return (
     <AboutStyles id="aboutme">
       <Particles className="particles"

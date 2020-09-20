@@ -34,7 +34,7 @@ function App() {
           <Content>
               <AboutMe translations={translations.aboutMe}/>
               <Skills translations={translations.skills}/>
-              <Projects></Projects>
+              <Projects translations={translations.projects}/>
               <ContactMe translations={translations.contactMe}/>
               <Footer></Footer>
           </Content>
