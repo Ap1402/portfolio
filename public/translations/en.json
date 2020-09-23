@@ -24,7 +24,7 @@
       "titleUrl":"/img/projects-title.png",
       "projectsList": [
         {"name": "Anime Database API", "imgURL":"/img/projects/anime-database.png", "description":"A web made with kitsu API for anime searching by categories, airing state and name."
-          ,"codeURL":"https://github.com/Flz14/anime-database", "websiteURL":"https://anime-database-popter9of.vercel.app/"},
+          ,"codeURL":"https://github.com/Flz14/anime-database", "websiteURL":"https://anime-database.vercel.app/"},
         {"name": "Doctor API", "imgURL":"/img/projects/api.png", "description":"An API that manages appointments for a doctor center, pacients can create users, make appointments and see their history. At the same time, doctors can set up their working schedule and accept or decline appointments."
         ,"codeURL":"https://github.com/Flz14/management-system", "websiteURL":"none"},
           {"name": "Simple e-commerce API", "imgURL":"/img/projects/api.png", "description":"This API manages a basic e-commerce, with basic user creation, custom carts and articles creation."
@@ -59,7 +59,7 @@
         {"name": "Doctor API", "imgURL":"/img/projects/api.png", "description":"Una api creada para la administración de citas médicas, además de matener un historial de las visitas y recetas asignadas a cada paciente"
         ,"codeURL":"https://github.com/Flz14/anime-database", "websiteURL":"none"},
         {"name": "Anime Database API", "imgURL":"/img/projects/anime-database.png", "description":"Una web creada para la busqueda de animes, por nombre, categoria y estado de transmisión"
-          ,"codeURL":"https://github.com/Flz14/management-system", "websiteURL":"https://anime-database-popter9of.vercel.app/"},
+          ,"codeURL":"https://github.com/Flz14/management-system", "websiteURL":"https://anime-database.vercel.app/"},
           {"name": "Simple e-commerce API", "imgURL":"/img/projects/api.png", "description":"Administración de un e-commerce básico, con posibilidad de crear usuarios, crear carritos personalizados y crear ordenes"
             ,"codeURL":"https://github.com/Flz14/simple-ecommerceNode", "websiteURL":"none"}
       ]
@@ -94,7 +94,7 @@
           "スケジュールをデジタル管理するAPIです。ユーザーはスケジュールを予定することや、レシピを読むこともできます。あと、医者は自分の仕事スケジュールを指定することや、患者のスケジュールを管理することができます。"
         ,"codeURL":"https://github.com/Flz14/management-system", "websiteURL":"none"},
         {"name": "Anime Database API", "imgURL":"/img/projects/anime-database.png", "description":"アニメ探索のために作られたウェッブです。カテゴリやタイトルで探索ことができます。"
-          ,"codeURL":"https://github.com/Flz14/management-system", "websiteURL":"https://anime-database-popter9of.vercel.app/"},
+          ,"codeURL":"https://github.com/Flz14/management-system", "websiteURL":"https://anime-database.vercel.app/"},
           {"name": "Simple e-commerce API", "imgURL":"/img/projects/api.png", "description":"簡単なecommerceの管理ソフト。"
             ,"codeURL":"https://github.com/Flz14/management-system", "websiteURL":"none"}
       ]
